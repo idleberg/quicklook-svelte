@@ -10,7 +10,7 @@ Built with [quicklook-kit](https://www.npmjs.com/package/quicklook-kit) and Svel
 ## Installation
 
 ```sh
-homebrew install idleberg/asahi/quicklook-svelte
+brew install idleberg/asahi/quicklook-svelte
 ```
 
 ## Development
