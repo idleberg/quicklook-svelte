@@ -1,0 +1,25 @@
+{
+	"name": "quicklook-svelte",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "quicklook dev",
+		"build": "quicklook build",
+		"register": "quicklook build && quicklook register",
+		"unregister": "quicklook unregister",
+		"check": "svelte-kit sync && svelte-check"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-static": "3.0.10",
+		"@sveltejs/kit": "2.70.3",
+		"@sveltejs/vite-plugin-svelte": "7.3.1",
+		"@twinkleplop/svelte": "^0.1.7",
+		"@twinkleplop/theme-catppuccin": "^0.1.4",
+		"quicklook-kit": "^0.3.0",
+		"svelte": "5.57.1",
+		"svelte-check": "4.7.6",
+		"typescript": "6.0.3",
+		"vite": "8.3.0"
+	},
+	"packageManager": "pnpm@12.12.1+sha512.b7f98934c0b1f29a65f5da52f2d7f994e7faad573ffdddea1497fb4dcb5aec051590ee7c7d95a38172b4bfae103a5b83edf2ee866e11731c2cafa96063610ac5"
+}
