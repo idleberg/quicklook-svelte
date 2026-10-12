@@ -1,6 +1,6 @@
 # quicklook-svelte
 
-> A macOS Quick Look preview that highlights Svelte components with [twinkleplop](https://twinkleplop.pngwn.at)
+> A macOS Quick Look preview that highlights Svelte components with [Twinklepop](https://twinkleplop.pngwn.at)
 
 Built with [quicklook-kit](https://www.npmjs.com/package/quicklook-kit) and SvelteKit.
 
@@ -27,7 +27,7 @@ mise install
 
 ### Theme
 
-The preview uses Catppuccin Latte, and Mocha when the system is in dark mode. To change it, install another [twinkleplop theme](https://twinkleplop.pngwn.at/docs/themes) and update the imports in `src/lib/theme.css`.
+The preview uses Catppuccin Latte, and Mocha when the system is in dark mode. To change it, install another [Twinklepop theme](https://twinkleplop.pngwn.at/docs/themes) and update the imports in `src/lib/theme.css`.
 
 ### Usage
 
