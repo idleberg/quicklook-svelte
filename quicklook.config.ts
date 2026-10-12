@@ -1,7 +1,7 @@
 import { defineConfig } from 'quicklook-kit';
 
 export default defineConfig({
-	name: 'QuickLook Svelte',
+	name: 'Quick Look Svelte',
 	bundleId: 'com.idleberg.QuickLookSvelte',
 	// macOS already knows .svelte as dev.svelte, so the app claims that rather than declaring its own.
 	types: ['dev.svelte'],

@@ -1,11 +1,11 @@
 # quicklook-svelte
 
-> A macOS QuickLook preview that highlights Svelte components with [twinkleplop](https://twinkleplop.pngwn.at)
+> A macOS Quick Look preview that highlights Svelte components with [twinkleplop](https://twinkleplop.pngwn.at)
 
 Built with [quicklook-kit](https://www.npmjs.com/package/quicklook-kit) and SvelteKit.
 
 > [!TIP]
-> For a full-featured QuickLook plugin for developers, check out [`quicklook-dev`](https://github.com/idleberg/quicklook-dev) instead.
+> For a full-featured Quick Look plugin for developers, check out [`quicklook-coder`](https://github.com/idleberg/quicklook-coder) instead.
 
 ## Installation
 
@@ -33,11 +33,11 @@ The preview uses Catppuccin Latte, and Mocha when the system is in dark mode. To
 
 ```sh
 pnpm dev        # drop a file on the page to preview it
-pnpm register   # build, install to /Applications and register with QuickLook
+pnpm register   # build, install to /Applications and register with Quick Look
 pnpm unregister
 ```
 
-Files over 500 KB get QuickLook's generic preview.
+Files over 500 KB get Quick Look's generic preview.
 
 ## License
 
