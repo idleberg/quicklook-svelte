@@ -13,6 +13,9 @@ Built with [quicklook-kit](https://www.npmjs.com/package/quicklook-kit) and Svel
 brew install idleberg/asahi/quicklook-svelte
 ```
 
+> [!IMPORTANT]
+> To register the plugin, you need to launch `Quick Look Svelte.app` once after installation.
+
 ## Themes
 
 Pick a light and a dark theme in the app's Settings tab. The preview follows the system appearance and defaults to Catppuccin. Changes apply to the next preview.
