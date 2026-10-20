@@ -5,9 +5,12 @@
 -->
 <script lang="ts" module>
 	import { language } from '@twinkleplop/svelte';
-	import './theme.css';
+	import { themeCss } from './themes.ts';
 
 	const svelte = language();
+
+	// The page's CSP allows inline styles.
+	const theme = `<style>${themeCss()}</style>`;
 </script>
 
 <script lang="ts">
@@ -18,6 +21,8 @@
 	// twinkleplop escapes the source, so the untrusted file can't inject markup.
 	const html = $derived(svelte(new TextDecoder().decode(file.bytes)));
 </script>
+
+<svelte:head>{@html theme}</svelte:head>
 
 {@html html}
 

@@ -13,6 +13,12 @@ Built with [quicklook-kit](https://www.npmjs.com/package/quicklook-kit) and Svel
 brew install idleberg/asahi/quicklook-svelte
 ```
 
+## Themes
+
+Pick a light and a dark theme in the app's Settings tab. The preview follows the system appearance and defaults to Catppuccin. Changes apply to the next preview.
+
+Available themes: **Atom One**, **Ayu**, **Catppuccin**, **GitHub**, **Material**, **Night Owl**, **Rosé Pine** and **Solarized**.
+
 ## Development
 
 ### Requirements
@@ -24,10 +30,6 @@ brew install idleberg/asahi/quicklook-svelte
 mise trust
 mise install
 ```
-
-### Theme
-
-The preview uses Catppuccin Latte, and Mocha when the system is in dark mode. To change it, install another [Twinklepop theme](https://twinkleplop.pngwn.at/docs/themes) and update the imports in `src/lib/theme.css`.
 
 ### Usage
 
