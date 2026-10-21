@@ -14,7 +14,7 @@ brew install idleberg/asahi/quicklook-svelte
 ```
 
 > [!IMPORTANT]
-> To register the plugin, you need to launch `Quick Look Svelte.app` once after installation.
+> To register the plugin, you need to launch `Quick Look Svelte.app` once after installation. The app is signed ad hoc, so you have to allow it in System Settings → Privacy & Security on first launch.
 
 ## Themes
 
