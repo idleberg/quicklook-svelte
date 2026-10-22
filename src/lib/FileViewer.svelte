@@ -6,11 +6,13 @@
 <script lang="ts" module>
 	import { language } from '@twinkleplop/svelte';
 	import { themeCss } from './themes.ts';
+	import { settings } from 'virtual:quicklook';
 
 	const svelte = language();
 
 	// The page's CSP allows inline styles.
 	const theme = `<style>${themeCss()}</style>`;
+	const { lineNumbers } = settings() as { lineNumbers: boolean };
 </script>
 
 <script lang="ts">
@@ -19,7 +21,9 @@
 	let { file }: { file: QuickLookFile } = $props();
 
 	// twinkleplop escapes the source, so the untrusted file can't inject markup.
-	const html = $derived(svelte(new TextDecoder().decode(file.bytes)));
+	const html = $derived(
+		svelte(new TextDecoder().decode(file.bytes), { line_numbers: lineNumbers })
+	);
 </script>
 
 <svelte:head>{@html theme}</svelte:head>
@@ -40,5 +44,15 @@
 			12px ui-monospace,
 			monospace;
 		white-space: pre-wrap;
+	}
+
+	/* Themes have no line number color, so borrow the comment one. */
+	:global(.twinkleplop .ln) {
+		display: inline-block;
+		min-width: 3ch;
+		padding-right: 2ch;
+		text-align: right;
+		color: var(--twp-comment);
+		user-select: none;
 	}
 </style>
